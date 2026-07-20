@@ -1,0 +1,698 @@
+ERROR - 2026-07-20 08:36:44 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#9 {main}
+CRITICAL - 2026-07-20 08:36:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost'
+[Method: CLI, Route: db:table/user]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 5 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 6 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 8 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 08:43:36 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 08:43:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table/user]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 08:48:09 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 08:48:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table/user]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 08:53:59 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 08:53:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 08:57:38 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 08:57:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 08:59:57 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 08:59:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 09:02:46 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 09:02:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 09:14:52 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 09:14:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 09:16:16 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 09:16:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 09:20:02 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 09:20:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 11:29:02 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 11:29:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 11:47:34 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 11:47:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 11:50:21 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 11:50:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 11:59:00 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 11:59:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 12:01:04 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 12:01:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 12:13:43 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 12:13:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+CRITICAL - 2026-07-20 12:22:05 --> ErrorException: Constant expression contains invalid operations
+[Method: CLI, Route: db:table]
+in APPPATH/Config/Database.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-07-20 12:23:11 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /var/www/html/Project_doc/proj-S4/Projet-final-S4-4040-4236/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-07-20 12:23:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
