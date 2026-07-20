@@ -3,16 +3,9 @@
 CREATE TABLE user (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     nom TEXT NOT NULL,
-    pwd TEXT NOT NULL,
+    num TEXT NOT NULL UNIQUE,
     type TEXT NOT NULL CHECK (type IN ('admin', 'user')),
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE TABLE numero (
-    id_client INT NOT NULL,
-    num VARCHAR(100) NOT NULL UNIQUE,
-    PRIMARY KEY (id_client, num),
-    FOREIGN KEY (id_client) REFERENCES user(id) ON DELETE CASCADE
 );
 
 CREATE TABLE mouvement (
@@ -36,15 +29,6 @@ CREATE TABLE transfert (
 );
 
 -- VUES
-
-CREATE VIEW v_user_numeros AS
-SELECT 
-    u.id AS user_id,
-    u.nom AS user_nom,
-    u.type AS user_type,
-    n.num AS numero
-FROM user u
-JOIN numero n ON u.id = n.id_client;
 
 CREATE VIEW v_transferts_emetteurs AS
 SELECT 
@@ -80,14 +64,12 @@ FROM mouvement m
 JOIN user u ON m.id_client = u.id;
 
 -- DONNEES DE TEST
-
-INSERT INTO user (nom, pwd, type) VALUES
-('alice_admin', '$2y$10$e8T3Z1a7fX9gK0L2mN4oPOQ1R2S3T4U5V6W7X8Y9Z0a1b2c3d4e5f', 'admin'),
-('bob_admin','$2y$10$e8T3Z1a7fX9gK0L2mN4oPOQ1R2S3T4U5V6W7X8Y9Z0a1b2c3d4e5f', 'admin'),
-('jean_dupont','$2y$10$e8T3Z1a7fX9gK0L2mN4oPOQ1R2S3T4U5V6W7X8Y9Z0a1b2c3d4e5f', 'user'),
-('marie_claire','$2y$10$e8T3Z1a7fX9gK0L2mN4oPOQ1R2S3T4U5V6W7X8Y9Z0a1b2c3d4e5f', 'user'),
-('luc_martin','$2y$10$e8T3Z1a7fX9gK0L2mN4oPOQ1R2S3T4U5V6W7X8Y9Z0a1b2c3d4e5f', 'user');
-INSERT INTO numero (id_client, num) VALUES
-(3, '0320123457'),
-(4, '0330987655'), 
-(5, '0340556678');
+-- Admin
+INSERT INTO user (nom, num, type) VALUES
+('alice_admin', '0320123457', 'admin'),
+('bob_admin', '0330987655', 'admin');
+-- Client
+INSERT INTO user (nom, num, type) VALUES
+('jean_dupont', '0612345678', 'user'),
+('marie_claire', '0698765432', 'user'),
+('luc_martin', '0711223344', 'user');
