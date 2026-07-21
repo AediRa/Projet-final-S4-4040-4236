@@ -1,7 +1,7 @@
 -- TABLES
 
 CREATE TABLE user (
-    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     nom TEXT NOT NULL,
     num TEXT NOT NULL UNIQUE,
     type TEXT NOT NULL CHECK (type IN ('admin', 'user')),
@@ -9,7 +9,7 @@ CREATE TABLE user (
 );
 
 CREATE TABLE mouvement (
-    id_mouv INTEGER AUTO_INCREMENT PRIMARY KEY,
+    id_mouv INTEGER PRIMARY KEY AUTOINCREMENT,
     id_client INTEGER NOT NULL,
     type TEXT NOT NULL CHECK (type IN ('retrait', 'depot')),
     montant INTEGER NOT NULL CHECK (montant > 0),
@@ -18,7 +18,7 @@ CREATE TABLE mouvement (
 );
 
 CREATE TABLE transfert (
-    id_transfert INTEGER AUTO_INCREMENT PRIMARY KEY,
+    id_transfert INTEGER PRIMARY KEY AUTOINCREMENT,
     id_client INTEGER NOT NULL,
     id_client_dest INTEGER NOT NULL,
     montant INTEGER NOT NULL CHECK (montant > 0),
