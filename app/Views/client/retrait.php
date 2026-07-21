@@ -14,7 +14,7 @@
             <h4 class="text-warning fw-bold mb-1">Faire un retrait</h4>
             <p class="text-muted small mb-4">Saisissez le montant à retirer de votre compte.</p>
 
-            <form action="#" method="post">
+            <form action="<?= base_url('/retrait') ?>" method="post">
                 <?= csrf_field() ?>
 
                 <!-- CHAMP MONTANT -->

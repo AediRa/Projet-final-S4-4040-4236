@@ -14,7 +14,7 @@
             <h4 class="text-primary fw-bold mb-1">Faire un dépôt</h4>
             <p class="text-muted small mb-4">Saisissez le montant à ajouter à votre compte.</p>
 
-            <form action="#" method="post">
+            <form action="<?= base_url('/depot') ?>" method="post">
                 <?= csrf_field() ?>
 
                 <!-- CHAMP MONTANT -->

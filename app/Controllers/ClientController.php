@@ -18,6 +18,12 @@ class ClientController extends BaseController
         return $mouvementModel->getSoldeClient((int)$userId);
     }
 
+    private function mouvement(){
+        $userId = session()->get('user_id'); 
+        
+        
+    }
+
     public function index()
     {
         //session()->set(['user_id' => 5, 'user_nom' => 'luc_martin']);
