@@ -93,3 +93,10 @@ INSERT INTO mouvement (id_client, type, montant, date) VALUES
 INSERT INTO mouvement (id_client, type, montant, date) VALUES
 (5, 'depot', 80000, '2026-07-03 10:00:00'),
 (5, 'retrait', 20000, '2026-07-15 15:30:00');
+
+CREATE TABLE epargne
+id_epargne INTEGER NOT NULL 
+
+INSERT INTO epargne
+(3, 'epargne', '5', 'user'),
+(4, 'epargne', '40', 'user');

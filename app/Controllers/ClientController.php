@@ -76,4 +76,13 @@ class ClientController extends BaseController
         ];
         return view('client/historique', $data);
     }
+
+
+  public function epargne()
+    {
+        $data = [
+            'solde' => $this->getSoldeUtilisateur(),
+        ];
+        return view('client', $data);
+    }
 }
