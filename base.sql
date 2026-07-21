@@ -73,3 +73,23 @@ INSERT INTO user (nom, num, type) VALUES
 ('jean_dupont', '0612345678', 'user'),
 ('marie_claire', '0698765432', 'user'),
 ('luc_martin', '0711223344', 'user');
+
+-- Dépôts et Retraits pour Jean Dupont (id: 3)
+-- Solde mouvements : +150 000 - 30 000 = +120 000 Ar
+INSERT INTO mouvement (id_client, type, montant, date) VALUES
+(3, 'depot', 100000, '2026-07-01 08:30:00'),
+(3, 'depot', 50000, '2026-07-05 14:15:00'),
+(3, 'retrait', 30000, '2026-07-10 11:00:00');
+
+-- Dépôts et Retraits pour Marie Claire (id: 4)
+-- Solde mouvements : +200 000 - 80 000 = +120 000 Ar
+INSERT INTO mouvement (id_client, type, montant, date) VALUES
+(4, 'depot', 200000, '2026-07-02 09:00:00'),
+(4, 'retrait', 50000, '2026-07-08 16:45:00'),
+(4, 'retrait', 30000, '2026-07-12 10:20:00');
+
+-- Dépôts et Retraits pour Luc Martin (id: 5)
+-- Solde mouvements : +80 000 - 20 000 = +60 000 Ar
+INSERT INTO mouvement (id_client, type, montant, date) VALUES
+(5, 'depot', 80000, '2026-07-03 10:00:00'),
+(5, 'retrait', 20000, '2026-07-15 15:30:00');
