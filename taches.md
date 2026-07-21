@@ -13,15 +13,9 @@
     - boutons transfert, depot et retrait [ok]
     - page profil
 
-- coté operateur
-    - Peut changer préfix d'identification de tel
-    - creer fonction (depot retrait transder)
-    - modifier barème de frais.
-    - voir le déplacement de l'argent
-    - voir solde des clients 
-- coté client
-    - faire un retrait
-    - faire un depot
-    - faire un transfert
-    - voir son historique
-    - voir la solde
+- Coté client
+    - Solde
+    - Dépôt
+    - Retrait
+    - Transfert
+    - Historique

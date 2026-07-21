@@ -1,0 +1,16 @@
+- coté admin
+    - Configuration des préfixes valable de l’opérateur (ex: 033 et 037)
+    - Création de types d'opérations (dépôt, retrait, transfert) avec des barèmes de frais par tranche de montant (modifiable)
+    - Situation gain via les différents frais ( retrait et transfert)
+    - Situation des comptes clients
+
+- coté client
+    - Acceuil
+        - Voir solde générale (calcul direct par requete sql : TotalRetrait - TotalDepot - Totaltransfert)
+        -
+    - Action Dépot
+    - Action Retrait
+    - Transfert
+        - Action
+        - Notification (?)
+    - Historique

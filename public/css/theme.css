@@ -1,0 +1,82 @@
+/* ==========================================
+   THÈME MAUVE & DÉGRADÉS (Purple Wave)
+   ========================================== */
+
+/* 1. Palette de couleurs et variables globales */
+:root {
+    --bs-primary: #6f42c1;
+    --bs-primary-rgb: 111, 66, 193;
+    --primary-gradient: linear-gradient(135deg, #8a2be2 0%, #4a00e0 100%);
+    --bg-gradient: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+/* 2. Fond de page général avec un léger dégradé soft */
+body.bg-light {
+    background: var(--bg-gradient) !important;
+    min-height: 100vh;
+}
+
+.btn-primary {
+    background: var(--primary-gradient) !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(111, 66, 193, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(111, 66, 193, 0.5);
+    filter: brightness(1.1);
+}
+
+/* 4. Textes violets/mauves */
+.text-primary {
+    color: #6f42c1 !important;
+}
+
+/* 5. Cartes stylisées avec bordures et ombres douces */
+.card {
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 6. Champs de saisie au focus mauve */
+.form-control:focus {
+    border-color: #8a2be2;
+    box-shadow: 0 0 0 0.25rem rgba(138, 43, 226, 0.25);
+}
+
+/* 7. Barre de navigation mauve en dégradé */
+.navbar-dark.bg-dark {
+    background: var(--primary-gradient) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des liens de la sidebar au survol et à l'état actif */
+aside .nav-link {
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+aside .nav-link:hover {
+    background-color: rgba(111, 66, 193, 0.1);
+    color: var(--bs-primary) !important;
+}
+
+/* Style de l'élément actif */
+aside .nav-link.active {
+    background: var(--primary-gradient) !important;
+    color: white !important;
+}
+
+/* Animation fluide au survol des cartes interactives */
+.hover-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12) !important;
+}
