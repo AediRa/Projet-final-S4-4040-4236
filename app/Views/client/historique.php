@@ -9,7 +9,7 @@
     <div class="col-md-4 text-md-end mt-3 mt-md-0">
         <div class="card bg-primary text-white p-3 shadow-sm border-0 rounded-3 d-inline-block w-100">
             <span class="text-white-50 small d-block">Solde Actuel</span>
-            <h4 class="fw-bold mb-0">125 000 Ar</h4>
+            <h4 class="fw-bold mb-0"><?= number_format($solde, 0, ',', ' ') ?> Ar</h4>
         </div>
     </div>
 </div>

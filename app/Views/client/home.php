@@ -10,7 +10,7 @@
                 </div>
                 <div class="text-end">
                     <small class="text-white-50 d-block">Solde Disponible</small>
-                    <h2 class="fw-bold mb-0">125 000 Ar</h2>
+                    <h2 class="fw-bold mb-0"><?= number_format($solde, 0, ',', ' ') ?> Ar</h2>
                 </div>
             </div>
         </div>

@@ -15,9 +15,9 @@ use CodeIgniter\Router\RouteCollection;
 // Page pour clients
 //$routes->get('home', 'HomeController::index', ['filter' => 'auth:user']);
 
-$routes->get('/', 'Login::index');
-$routes->post('/login', 'Login::login');
-$routes->get('/logout', 'Login::logout');
+$routes->get('/', 'LoginController::index');
+$routes->post('/login', 'LoginController::login');
+$routes->get('/logout', 'LoginController::logout');
 
 // client
 $routes->group('', ['filter' => 'auth:user'], function ($routes) {

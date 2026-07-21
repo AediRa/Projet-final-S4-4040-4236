@@ -6,7 +6,7 @@
         <!-- 1. CARTE DE SOLDE ACTUEL -->
         <div class="card bg-primary text-white p-4 shadow-sm border-0 rounded-3 mb-4 text-center">
             <span class="text-white-50 small d-block mb-1">Solde Actuel</span>
-            <h2 class="fw-bold mb-0">125 000 Ar</h2>
+            <h2 class="fw-bold mb-0"><?= number_format($solde, 0, ',', ' ') ?> Ar</h2>
         </div>
 
         <!-- 2. FORMULAIRE DE RETRAIT SIMPLE -->
